@@ -4,7 +4,7 @@ function reducer(state, action) {
     return produce(state, draftState => {
         switch (action.type) {
             case 'initialise-cart': {
-                return [...action.items];
+                return action.items;
             }
 
             case 'add-item': {

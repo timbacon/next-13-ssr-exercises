@@ -9,6 +9,7 @@ function CheckoutFlow({ items, taxRate, handleDeleteItem }) {
         return (
             <div className='checkout-flow empty'>
                 <Spinner />
+                <p>Fetching cart contents...</p>
             </div>
         );
     }
